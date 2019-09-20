@@ -60,5 +60,9 @@ function convert(num){
     m = num%60;
     return h+m
 }
-tasks.map( convert)
-
+tasksinhour = task.map(function(index,value,originaltask){
+    convert(value.duration)
+})
+const filteredtasks = tasksinhour.filter(function(index,value,previoustasks){
+    
+})
