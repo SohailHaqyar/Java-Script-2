@@ -64,5 +64,8 @@ tasksinhour = task.map(function(index,value,originaltask){
     convert(value.duration)
 })
 const filteredtasks = tasksinhour.filter(function(index,value,previoustasks){
-    
+    if(duration<2){
+return tasksinhour
+    }else{return 'nothing'}
+
 })
